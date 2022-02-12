@@ -6,7 +6,14 @@ class ScrabbleScore {
 
     fun scoreWord(word: String): Int{
         //TODO calculate using the scoreLetter method below, the scrabble value of the word passed as a parameter
-        return 0
+        var result: Int = 0
+
+        for (item in word)
+            result += scoreLetter(item)
+
+        return result
+        //This webpage gave me the idea of how to solve this:
+        //https://www.codecademy.com/forum_questions/522f576fabf82117ec000f21
     }
 
     //TODO the program if the user enters in any chars other than capital letters...try fix this.
