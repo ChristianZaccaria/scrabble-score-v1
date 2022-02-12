@@ -15,7 +15,7 @@ private val scrabbleScore = ScrabbleScore();
  * */
 
 fun main(args: Array<String>) {
-    scrabbleScore.letterValues()
+    println(scrabbleScore.letterValues())
     while (true) {
         print("Enter a word and compute the Scrabble Score: ")
         val word = input.nextLine()
